@@ -1,0 +1,10 @@
+C:\Users\New\source\repos\Search and fetch from Wikipedia\Search and fetch from Wikipedia\bin\Debug\Search and fetch from Wikipedia.exe.config
+C:\Users\New\source\repos\Search and fetch from Wikipedia\Search and fetch from Wikipedia\bin\Debug\Search and fetch from Wikipedia.exe
+C:\Users\New\source\repos\Search and fetch from Wikipedia\Search and fetch from Wikipedia\bin\Debug\Search and fetch from Wikipedia.pdb
+C:\Users\New\source\repos\Search and fetch from Wikipedia\Search and fetch from Wikipedia\obj\Debug\Search and fetch from Wikipedia.csprojAssemblyReference.cache
+C:\Users\New\source\repos\Search and fetch from Wikipedia\Search and fetch from Wikipedia\obj\Debug\Search_and_fetch_from_Wikipedia.Search.resources
+C:\Users\New\source\repos\Search and fetch from Wikipedia\Search and fetch from Wikipedia\obj\Debug\Search_and_fetch_from_Wikipedia.Properties.Resources.resources
+C:\Users\New\source\repos\Search and fetch from Wikipedia\Search and fetch from Wikipedia\obj\Debug\Search and fetch from Wikipedia.csproj.GenerateResource.cache
+C:\Users\New\source\repos\Search and fetch from Wikipedia\Search and fetch from Wikipedia\obj\Debug\Search and fetch from Wikipedia.csproj.CoreCompileInputs.cache
+C:\Users\New\source\repos\Search and fetch from Wikipedia\Search and fetch from Wikipedia\obj\Debug\Search and fetch from Wikipedia.exe
+C:\Users\New\source\repos\Search and fetch from Wikipedia\Search and fetch from Wikipedia\obj\Debug\Search and fetch from Wikipedia.pdb
