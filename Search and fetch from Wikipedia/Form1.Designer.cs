@@ -32,6 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.searchBtn = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.exportBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -61,7 +62,7 @@
             // 
             this.searchBtn.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.searchBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchBtn.Location = new System.Drawing.Point(344, 415);
+            this.searchBtn.Location = new System.Drawing.Point(564, 64);
             this.searchBtn.Name = "searchBtn";
             this.searchBtn.Size = new System.Drawing.Size(75, 23);
             this.searchBtn.TabIndex = 3;
@@ -73,9 +74,22 @@
             // 
             this.richTextBox1.Location = new System.Drawing.Point(12, 100);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(776, 309);
+            this.richTextBox1.Size = new System.Drawing.Size(776, 338);
             this.richTextBox1.TabIndex = 4;
             this.richTextBox1.Text = "";
+            // 
+            // exportBtn
+            // 
+            this.exportBtn.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.exportBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exportBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.exportBtn.Location = new System.Drawing.Point(646, 63);
+            this.exportBtn.Name = "exportBtn";
+            this.exportBtn.Size = new System.Drawing.Size(75, 23);
+            this.exportBtn.TabIndex = 5;
+            this.exportBtn.Text = "Export";
+            this.exportBtn.UseVisualStyleBackColor = false;
+            this.exportBtn.Click += new System.EventHandler(this.exportBtn_Click);
             // 
             // Search
             // 
@@ -83,6 +97,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LawnGreen;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.exportBtn);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.searchBtn);
             this.Controls.Add(this.label1);
@@ -101,6 +116,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button searchBtn;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button exportBtn;
     }
 }
 

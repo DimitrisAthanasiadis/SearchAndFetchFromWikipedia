@@ -55,5 +55,17 @@ namespace Search_and_fetch_from_Wikipedia
                 richTextBox1.Text = "error";
             }
         }
+
+        private void exportBtn_Click(object sender, EventArgs e)
+        {
+            const string message = "Are you sure you want to export ?";
+            const string caption = "Export";
+            DialogResult result = MessageBox.Show(message, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if(result == DialogResult.No)
+            {
+                
+            }
+            System.IO.File.WriteAllLines(@"C:\Users\New\Desktop\Wikipedia Exports\" + textBox1.Text + ".doc", richTextBox1.Lines);
+        }
     }
 }
