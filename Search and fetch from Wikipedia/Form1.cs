@@ -38,6 +38,16 @@ namespace Search_and_fetch_from_Wikipedia
             var pageSourceCode = webclient.DownloadString("http://en.wikipedia.org/w/api.php?format=xml&action=query&prop=extracts&titles=" + textBox1.Text + "&redirects=true");
             XmlDocument doc = new XmlDocument();
             doc.LoadXml(pageSourceCode);
+            doc.Save(@"C:\Users\New\Desktop\Wikipedia Exports\" + textBox1.Text + ".xml");
+            XmlNodeList pagelist = doc.SelectNodes("//page");
+            //string articleTitle = "";
+            string title = "";
+            foreach(XmlNode page in pagelist)
+            {
+                title = page.Attributes["title"].InnerText;
+            }
+            MessageBox.Show(title, "Article title", MessageBoxButtons.OK);
+            
 
             var fnode = doc.GetElementsByTagName("extract")[0];
 
@@ -48,6 +58,7 @@ namespace Search_and_fetch_from_Wikipedia
                 string.Format("Before:{0}", ss);
                 ss = regex.Replace(ss, string.Empty);
                 string result = String.Format(ss);
+                richTextBox1.Text += title + "\r\n";
                 richTextBox1.Text += result;
             }
             catch(Exception)
