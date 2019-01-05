@@ -31,6 +31,7 @@ namespace Search_and_fetch_from_Wikipedia
 
         }
 
+        public string title = "";
         private void searchBtn_Click(object sender, EventArgs e)
         {
             richTextBox1.Text = "";
@@ -38,10 +39,10 @@ namespace Search_and_fetch_from_Wikipedia
             var pageSourceCode = webclient.DownloadString("http://en.wikipedia.org/w/api.php?format=xml&action=query&prop=extracts&titles=" + textBox1.Text + "&redirects=true");
             XmlDocument doc = new XmlDocument();
             doc.LoadXml(pageSourceCode);
-            doc.Save(@"C:\Users\New\Desktop\Wikipedia Exports\" + textBox1.Text + ".xml");
+            //doc.Save(@"C:\Users\New\Desktop\Wikipedia Exports\" + textBox1.Text + ".xml");
             XmlNodeList pagelist = doc.SelectNodes("//page");
             //string articleTitle = "";
-            string title = "";
+            
             foreach(XmlNode page in pagelist)
             {
                 title = page.Attributes["title"].InnerText;
@@ -76,7 +77,7 @@ namespace Search_and_fetch_from_Wikipedia
             {
                 
             }
-            System.IO.File.WriteAllLines(@"C:\Users\New\Desktop\Wikipedia Exports\" + textBox1.Text + ".doc", richTextBox1.Lines);
+            System.IO.File.WriteAllLines(@"C:\Users\New\Desktop\Wikipedia Exports\" + title + ".doc", richTextBox1.Lines);
         }
     }
 }
